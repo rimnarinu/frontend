@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Showcase</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="products">
+        <div>
+            <h2>Our Products</h2>
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>Product 1</td>
+                    <td>$10</td>
+                    <td>Category A</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>$20</td>
+                    <td>Category B</td>
+                    <td>Out of Stock</td>
+                </tr>
+                <!-- Add more products as needed -->
+            </table>
+
+            <h3>Product Details</h3>
+            <dl>
+                <dt>Product 1</dt>
+                <dd>Description: This is an amazing product that offers great value.</dd>
+                <dt>Product 2</dt>
+                <dd>Description: A high-quality product for everyday use.</dd>
+                <!-- Add more product details as needed -->
+            </dl>
+        </div>
+
+        <h3>Media Showcase</h3>
+        <img src="product1.jpg" alt="Product 1" width="300">
+        <img src="product2.jpg" alt="Product 2" width="300">
+        <!-- Embed a video using iframe -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <aside>
+        <h4>Related Products</h4>
+        <!-- Content for related products or advertisements -->
+    </aside>
+    
+    <section id="feedback">
+        <h2>User Feedback</h2>
+        <form action="submit-feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="rating">Rating:</label><br>
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+            <label for="rating-1">1</label><br>
+            <input type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2">2</label><br>
+            <input type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3">3</label><br>
+            <!-- Continue for all ratings up to 10 -->
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer>
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com">Facebook</a> |
+        <a href="https://www.twitter.com">Twitter</a> |
+        <a href="https://www.instagram.com">Instagram</a>
+    </footer>
+</body>
+</html>
